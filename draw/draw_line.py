@@ -20,12 +20,12 @@ length = int(i)
 i = input("深さの値を入力：")
 d = int(i)
 
-penup()
-setposition(-400, -200)
-pendown()
+penup()  # ペンを上げる
+setposition(-400, -200)  # 描き始めの位置を設定
+pendown()  # ペンを下げる
 recur (length, d)
 
-done()
+done()  # これがないと描画画面が閉じる
 
 
 
